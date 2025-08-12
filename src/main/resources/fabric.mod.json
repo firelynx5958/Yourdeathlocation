@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "player-death-location",
+	"version": "${version}",
+	"name": "Your Death Location",
+	"description": "Displays your death coordinates in chat when you die. Can be toggled with commands.",
+	"authors": [
+		"firelynx"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/player-death-location/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.firelynx.playerdeathlocation.PlayerDeathLocation"
+		]
+	},
+	"mixins": [
+		"player-death-location.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+
+}

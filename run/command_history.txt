@@ -1,0 +1,5 @@
+/register ishaan123 ishaan123
+/deathcoords off
+/kill @a
+/deathcoords on
+/kill @a
