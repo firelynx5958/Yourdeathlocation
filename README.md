@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🗺️ PLAYER DEATH LOCATION
+# PLAYER DEATH LOCATION
 ### *BY FIRELYNX*
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-brightgreen.svg)
@@ -45,8 +45,6 @@ Smaller rendering, Less overhead, More performance.
 
 ## 🛸 PLAY TOGETHER
 ### **FOR FREE!**
-
-*Need a 24/7 Server Instance? Then check this out:*
 
 ---
 
@@ -127,49 +125,6 @@ Smaller rendering, Less overhead, More performance.
 /deathcoords holograms off   → Disables floating hologram display
 ```
 
-## 🎨 Visual Elements
-
-### HUD Display Format
-```
-┌─────────────────────────┐
-│ HOME - 1,234m          │  ← Always visible in top-right
-│ MINING BASE - 567m     │     corner of screen
-│ Death Point - 89m      │  ← Updates in real-time
-└─────────────────────────┘
-```
-
-### 3D Hologram Format
-```
-▲ WAYPOINT_NAME [123m] ▲  ← Floating above waypoint location
-```
-
-### Color Scheme
-- **🔴 Red**: Death waypoints and death-related text
-- **🔵 Cyan/Aqua**: Custom waypoints
-- **🟡 Yellow**: Distance measurements
-- **🟢 Green**: Success messages
-- **🟠 Gold**: System status messages
-
-## 📁 File Structure
-
-### Configuration Files (stored in `.minecraft/config/`)
-```
-player-death-location.json           → Main mod configuration
-player-death-location/waypoints/     → Waypoint storage directory
-  ├── <player-uuid>.json            → Individual player waypoint files
-  └── <player-uuid>.json            → One file per player
-```
-
-### Example Configuration
-```json
-{
-  "deathCoordsEnabled": true,
-  "deathWaypointsEnabled": true,
-  "waypointsEnabled": true,
-  "holographicWaypointsEnabled": true,
-  "waypointRenderDistance": 2147483647
-}
-```
 
 ## 🔧 Installation
 
@@ -179,61 +134,6 @@ player-death-location/waypoints/     → Waypoint storage directory
 4. **Launch** Minecraft with Fabric profile
 5. **Configure** using in-game commands
 
-## 🎯 Key Advantages
-
-### vs. Other Waypoint Mods
-- ✅ **Infinite Distance Visibility**: No render distance limitations
-- ✅ **Automatic Death Tracking**: No manual waypoint creation needed for deaths
-- ✅ **Dual Visual System**: Both HUD and 3D displays
-- ✅ **Server-Side Compatible**: Works in multiplayer
-- ✅ **Lightweight**: Minimal performance impact
-
-### vs. Coordinates-Only Mods
-- ✅ **Visual Waypoints**: Not just text coordinates
-- ✅ **Distance Tracking**: Always know how far waypoints are
-- ✅ **Persistent Storage**: Waypoints saved between sessions
-- ✅ **Easy Management**: Simple commands for waypoint operations
-
-## 🐛 Troubleshooting
-
-### Waypoints Not Showing on HUD
-- Check `/deathcoords holograms on`
-- Ensure you're in the correct dimension
-- Try `/waypoint list` to verify waypoints exist
-
-### Death Coordinates Not Appearing
-- Run `/deathcoords on` to enable
-- Check chat settings for system messages
-
-### Holograms Not Visible
-- Use HUD display (always visible) instead of 3D holograms
-- 3D holograms have limited range, HUD display works from infinite distance
-
-## 🎮 Compatibility & Dependencies
-
-| Minecraft | Loader | Status | Version | Note |
-|-----------|--------|--------|---------|------|
-| **1.21.1** | Fabric/Quilt+Forge | ✅ Latest | **Latest** | |
-| **1.18.1-1.21** | Fabric/Forge | ⚠️ **planned** | Outdated | Will be moved into supported later |
-| **1.20.1-1.6.1** | Forge | ❌ **Not supported** | Outdated | Might get new updates at some point |
-| **1.17.6** | Forge | ❌ **Not supported** | Outdated | |
-| **< 1.7.3** | Bukkit | ❌ **Not supported** | Outdated | No updates planned |
-
----
-
-## 📸 Screenshots / Media
-
-### Before vs After Comparison
-
-<div align="center">
-
-| **Before** | **After** |
-|------------|----------|
-| ![before](https://via.placeholder.com/300x200/333333/FFFFFF?text=Without+Waypoints) | ![after](https://via.placeholder.com/300x200/00AA00/FFFFFF?text=With+HUD+Waypoints) |
-| *Direct coordinate searching* | *Always-visible waypoint HUD* |
-| **Lost and confused navigation** | **Precise distance tracking** |
-
-*Direct comparison show/using/without using Player Death Location active. Player: Optional life, Render distance: Far, Immersive/Ext, 16 render distance.*
 
 </div>
 
