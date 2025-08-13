@@ -5,7 +5,7 @@
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-brightgreen.svg)
 ![Fabric](https://img.shields.io/badge/Fabric-Latest-blue.svg)
-![License](https://img.shields.io/badge/License-CC0--1.0-yellow.svg)
+![License](https://img.shields.io/badge/License-CC0--2.0-yellow.svg)
 ![Downloads](https://img.shields.io/badge/Downloads-1K+-orange.svg)
 ![Version](https://img.shields.io/badge/Version-1.0.0-red.svg)
 
@@ -191,6 +191,6 @@ Yes, this mod implements a different waypoint tracking approach to sodium's enti
 [![GitHub issues](https://img.shields.io/github/issues/firelynx/player-death-location)](https://github.com/firelynx/player-death-location/issues)  
 [![GitHub license](https://img.shields.io/github/license/firelynx/player-death-location)](https://github.com/firelynx/player-death-location/blob/main/LICENSE)
 
-**Version**: 1.0.0 | **Author**: firelynx | **License**: CC0-1.0 | **Platform**: Minecraft 1.21.1 Fabric
+**Version**: 2.0.0 | **Author**: firelynx | **License**: CC0-1.0 | **Platform**: Minecraft 1.21.1 Fabric
 
 </div>
