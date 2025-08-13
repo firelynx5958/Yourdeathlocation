@@ -1,3 +1,7 @@
 {
-  "deathCoordsEnabled": true
+  "deathCoordsEnabled": true,
+  "deathWaypointsEnabled": true,
+  "waypointsEnabled": true,
+  "holographicWaypointsEnabled": true,
+  "waypointRenderDistance": 100
 }

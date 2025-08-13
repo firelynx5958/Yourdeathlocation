@@ -19,6 +19,18 @@ public class DeathCoordsCommand {
                     .executes(DeathCoordsCommand::enableDeathCoords))
                 .then(CommandManager.literal("off")
                     .executes(DeathCoordsCommand::disableDeathCoords))
+                .then(CommandManager.literal("waypoints")
+                    .then(CommandManager.literal("on")
+                        .executes(DeathCoordsCommand::enableDeathWaypoints))
+                    .then(CommandManager.literal("off")
+                        .executes(DeathCoordsCommand::disableDeathWaypoints))
+                    .executes(DeathCoordsCommand::getWaypointsStatus))
+                .then(CommandManager.literal("holograms")
+                    .then(CommandManager.literal("on")
+                        .executes(DeathCoordsCommand::enableHolograms))
+                    .then(CommandManager.literal("off")
+                        .executes(DeathCoordsCommand::disableHolograms))
+                    .executes(DeathCoordsCommand::getHologramsStatus))
                 .executes(DeathCoordsCommand::getStatus)
         );
         
@@ -49,6 +61,64 @@ public class DeathCoordsCommand {
         
         context.getSource().sendFeedback(() -> 
             Text.translatable("command.player-death-location.status", 
+                Text.translatable(statusKey).formatted(enabled ? Formatting.GREEN : Formatting.RED))
+                .formatted(Formatting.GOLD), false);
+        return 1;
+    }
+    
+    private static int enableDeathWaypoints(CommandContext<ServerCommandSource> context) {
+        ModConfig.getInstance().setDeathWaypointsEnabled(true);
+        context.getSource().sendFeedback(() -> 
+            Text.translatable("command.player-death-location.waypoints.enabled")
+                .formatted(Formatting.GREEN), false);
+        return 1;
+    }
+    
+    private static int disableDeathWaypoints(CommandContext<ServerCommandSource> context) {
+        ModConfig.getInstance().setDeathWaypointsEnabled(false);
+        context.getSource().sendFeedback(() -> 
+            Text.translatable("command.player-death-location.waypoints.disabled")
+                .formatted(Formatting.RED), false);
+        return 1;
+    }
+    
+    private static int getWaypointsStatus(CommandContext<ServerCommandSource> context) {
+        boolean enabled = ModConfig.getInstance().isDeathWaypointsEnabled();
+        String statusKey = enabled ? 
+            "command.player-death-location.status.enabled" : 
+            "command.player-death-location.status.disabled";
+        
+        context.getSource().sendFeedback(() -> 
+            Text.translatable("command.player-death-location.waypoints.status", 
+                Text.translatable(statusKey).formatted(enabled ? Formatting.GREEN : Formatting.RED))
+                .formatted(Formatting.GOLD), false);
+        return 1;
+    }
+    
+    private static int enableHolograms(CommandContext<ServerCommandSource> context) {
+        ModConfig.getInstance().setHolographicWaypointsEnabled(true);
+        context.getSource().sendFeedback(() -> 
+            Text.translatable("command.player-death-location.holograms.enabled")
+                .formatted(Formatting.GREEN), false);
+        return 1;
+    }
+    
+    private static int disableHolograms(CommandContext<ServerCommandSource> context) {
+        ModConfig.getInstance().setHolographicWaypointsEnabled(false);
+        context.getSource().sendFeedback(() -> 
+            Text.translatable("command.player-death-location.holograms.disabled")
+                .formatted(Formatting.RED), false);
+        return 1;
+    }
+    
+    private static int getHologramsStatus(CommandContext<ServerCommandSource> context) {
+        boolean enabled = ModConfig.getInstance().isHolographicWaypointsEnabled();
+        String statusKey = enabled ? 
+            "command.player-death-location.status.enabled" : 
+            "command.player-death-location.status.disabled";
+        
+        context.getSource().sendFeedback(() -> 
+            Text.translatable("command.player-death-location.holograms.status", 
                 Text.translatable(statusKey).formatted(enabled ? Formatting.GREEN : Formatting.RED))
                 .formatted(Formatting.GOLD), false);
         return 1;

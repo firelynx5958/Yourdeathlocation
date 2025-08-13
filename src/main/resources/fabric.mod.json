@@ -3,7 +3,7 @@
 	"id": "player-death-location",
 	"version": "${version}",
 	"name": "Your Death Location",
-	"description": "Displays your death coordinates in chat when you die. Can be toggled with commands.",
+	"description": "Displays your death coordinates in chat when you die and creates waypoints at death locations. Also allows players to create custom waypoints anywhere. All features can be toggled with commands.",
 	"authors": [
 		"firelynx"
 	],
@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"com.firelynx.playerdeathlocation.PlayerDeathLocation"
+		],
+		"client": [
+			"com.firelynx.playerdeathlocation.client.PlayerDeathLocationClient"
 		]
 	},
 	"mixins": [

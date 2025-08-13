@@ -4,5 +4,32 @@
   "command.player-death-location.status": "Death coordinates notifications are currently: %s",
   "command.player-death-location.status.enabled": "enabled",
   "command.player-death-location.status.disabled": "disabled",
-  "death.player-death-location.message": "You died at: %d, %d, %d in %s"
+  "death.player-death-location.message": "You died at: %d, %d, %d in %s",
+  
+  "command.player-death-location.waypoints.enabled": "Death waypoints enabled",
+  "command.player-death-location.waypoints.disabled": "Death waypoints disabled",
+  "command.player-death-location.waypoints.status": "Death waypoints are currently: %s",
+  "command.player-death-location.holograms.status": "Holographic waypoints are currently %s",
+  "command.player-death-location.holograms.enabled": "Holographic waypoints have been enabled",
+  "command.player-death-location.holograms.disabled": "Holographic waypoints have been disabled",
+  
+  "command.player-death-location.waypoint.created": "Waypoint '%s' created at: %d, %d, %d in %s",
+  "command.player-death-location.waypoint.death_created": "Death waypoint created at: %d, %d, %d in %s",
+  "command.player-death-location.waypoint.list": "Your waypoints:",
+  "command.player-death-location.waypoint.list.entry": "%d. %s: %d, %d, %d in %s",
+  "command.player-death-location.waypoint.list.empty": "You don't have any waypoints",
+  "command.player-death-location.waypoint.removed": "Waypoint '%s' removed",
+  "command.player-death-location.waypoint.not_found": "Waypoint not found",
+  "command.player-death-location.waypoint.help": "Waypoint commands: create <name>, list, remove <index>",
+  
+  "waypoint.player-death-location.death_waypoint_added": "Death waypoint created at: %d, %d, %d",
+  "waypoint.player-death-location.waypoint_added": "Waypoint '%s' created at: %d, %d, %d",
+  
+  "command.player-death-location.waypoint.help.header": "Waypoint Commands Help",
+  "command.player-death-location.waypoint.help.create": "/waypoint create <name> - Create a waypoint at your current location",
+  "command.player-death-location.waypoint.help.list": "/waypoint list - Show all your waypoints",
+  "command.player-death-location.waypoint.help.remove": "/waypoint remove <index> - Remove a waypoint by its number",
+  "command.player-death-location.waypoint.invalid_index": "Invalid waypoint index",
+  "command.player-death-location.waypoint.no_waypoints": "You don't have any waypoints",
+  "command.player-death-location.waypoint.list_header": "Your Waypoints:"
 }

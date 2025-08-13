@@ -1,5 +1,50 @@
-/register ishaan123 ishaan123
-/deathcoords off
+/tick freeze
+/tick unfreeze
+/gamemode survival
+/gamemode creative
+/locate structure minecraft:village_plains
+/tp @s -976 ~ 16
+/gamemode survival
+/give @s minecraft:diamond_sword
+/enchant @s minecraft:sharpness 10
+/enchant @s minecraft:sharpness 5
+/xp set Player489 1000000
+/xp set Player489 1000000 levels
+/xp set Player489 69696969 levels
+/locate structure minecraft:trial_chambers
+/tp @s -752 ~ -512
+/waypoint
+/waypoint list
+/waypoint create home
+/waypoint list
 /kill @a
-/deathcoords on
-/kill @a
+/waypoint list
+/gamemode creative
+/time set day
+/waypoint
+/waypoint create
+/waypoint create base
+/waypoint list
+/coordinate
+/waypoint create base
+/waypoint list
+/deathcoords holograms
+/waypoint create HOME
+/waypoint test
+/waypoint create home
+/waypoint list
+/waypoint
+/deathcoords waypoints on
+/waypoint create home
+/waypoint test
+/waypoint list
+/deathcoords holograms on
+/waypoint test
+/deathcoords waypoints on
+/waypoint test
+/waypoint create home
+/waypoint list
+/waypoint testarmor
+/waypoint create home
+/waypoint create base
+/waypoint create home

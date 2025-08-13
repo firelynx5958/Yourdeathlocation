@@ -1,9 +1,12 @@
 package com.firelynx.playerdeathlocation;
 
 import com.firelynx.playerdeathlocation.command.DeathCoordsCommand;
+import com.firelynx.playerdeathlocation.command.WaypointCommand;
 import com.firelynx.playerdeathlocation.config.ModConfig;
+import com.firelynx.playerdeathlocation.waypoint.WaypointManager;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,11 +28,15 @@ public class PlayerDeathLocation implements ModInitializer {
 		// Load the config
 		ModConfig.loadConfig();
 		
+		// Initialize the waypoint manager
+		WaypointManager.init();
+		
 		// Register the death location handler
 		DeathLocationHandler.register();
 		
-		// Register the command
+		// Register the commands
 		CommandRegistrationCallback.EVENT.register(DeathCoordsCommand::register);
+		CommandRegistrationCallback.EVENT.register(WaypointCommand::register);
 		
 		LOGGER.info("Player Death Location mod initialized!");
 	}

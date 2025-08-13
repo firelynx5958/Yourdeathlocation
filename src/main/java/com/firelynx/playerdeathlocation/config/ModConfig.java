@@ -17,6 +17,10 @@ public class ModConfig {
     private static ModConfig INSTANCE;
     
     private boolean deathCoordsEnabled = true; // Enabled by default
+    private boolean deathWaypointsEnabled = true; // Death waypoints enabled by default
+    private boolean waypointsEnabled = true; // Custom waypoints enabled by default
+    private boolean holographicWaypointsEnabled = true; // Holographic waypoint display enabled by default
+    private int waypointRenderDistance = Integer.MAX_VALUE; // No distance limit for waypoint rendering
     
     public static ModConfig getInstance() {
         if (INSTANCE == null) {
@@ -62,6 +66,42 @@ public class ModConfig {
     
     public void setDeathCoordsEnabled(boolean deathCoordsEnabled) {
         this.deathCoordsEnabled = deathCoordsEnabled;
+        saveConfig();
+    }
+    
+    public boolean isDeathWaypointsEnabled() {
+        return deathWaypointsEnabled;
+    }
+    
+    public void setDeathWaypointsEnabled(boolean deathWaypointsEnabled) {
+        this.deathWaypointsEnabled = deathWaypointsEnabled;
+        saveConfig();
+    }
+    
+    public boolean isWaypointsEnabled() {
+        return waypointsEnabled;
+    }
+    
+    public void setWaypointsEnabled(boolean waypointsEnabled) {
+        this.waypointsEnabled = waypointsEnabled;
+        saveConfig();
+    }
+    
+    public boolean isHolographicWaypointsEnabled() {
+        return holographicWaypointsEnabled;
+    }
+    
+    public void setHolographicWaypointsEnabled(boolean holographicWaypointsEnabled) {
+        this.holographicWaypointsEnabled = holographicWaypointsEnabled;
+        saveConfig();
+    }
+    
+    public int getWaypointRenderDistance() {
+        return waypointRenderDistance;
+    }
+    
+    public void setWaypointRenderDistance(int waypointRenderDistance) {
+        this.waypointRenderDistance = waypointRenderDistance;
         saveConfig();
     }
 }
