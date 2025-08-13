@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="Bow torch" />
-      </profile>
-    </annotationProcessing>
     <bytecodeTargetLevel target="21" />
   </component>
   <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_STRING" value="-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/main/player-death-location-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.main.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.21.1/net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2/mappings.tiny" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="&quot;-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/main/player-death-location-refmap.json&quot; -AdefaultObfuscationEnv=named:intermediary -Aquiet=true &quot;-AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.main.tiny&quot; -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.21.1/net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2/mappings.tiny" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Bow torch" options="" />
-      <module name="Bow_torch.main" options="&quot;-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/main/bow-torch-refmap.json&quot; -AdefaultObfuscationEnv=named:intermediary -Aquiet=true &quot;-AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-net.fabricmc.yarn.1_21_8.1.21.8+build.1-v2.main.tiny&quot; -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.21.8/net.fabricmc.yarn.1_21_8.1.21.8+build.1-v2/mappings.tiny" />
-      <module name="Bow_torch.test" options="&quot;-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/test/test-bow-torch-refmap.json&quot; -AdefaultObfuscationEnv=named:intermediary -Aquiet=true &quot;-AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-net.fabricmc.yarn.1_21_8.1.21.8+build.1-v2.test.tiny&quot; -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.21.8/net.fabricmc.yarn.1_21_8.1.21.8+build.1-v2/mappings.tiny" />
+      <module name="Bow_torch.test" options="&quot;-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/test/test-player-death-location-refmap.json&quot; -AdefaultObfuscationEnv=named:intermediary -Aquiet=true &quot;-AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.test.tiny&quot; -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.21.1/net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2/mappings.tiny" />
       <module name="Yourdeathlocation.test" options="-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/test/test-player-death-location-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.test.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.21.1/net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2/mappings.tiny" />
     </option>
   </component>

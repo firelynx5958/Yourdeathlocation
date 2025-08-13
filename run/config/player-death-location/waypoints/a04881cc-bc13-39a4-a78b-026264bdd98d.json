@@ -1,0 +1,22 @@
+[
+  {
+    "name": "home",
+    "position": {
+      "x": -154,
+      "y": 67,
+      "z": 123
+    },
+    "dimension": "minecraft:overworld",
+    "isDeathPoint": false
+  },
+  {
+    "name": "Test Waypoint 102",
+    "position": {
+      "x": -156,
+      "y": 67,
+      "z": 122
+    },
+    "dimension": "minecraft:overworld",
+    "isDeathPoint": false
+  }
+]

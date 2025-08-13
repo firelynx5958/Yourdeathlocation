@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Test Waypoint 328",
+    "position": {
+      "x": -151,
+      "y": 66,
+      "z": 116
+    },
+    "dimension": "minecraft:overworld",
+    "isDeathPoint": false
+  }
+]

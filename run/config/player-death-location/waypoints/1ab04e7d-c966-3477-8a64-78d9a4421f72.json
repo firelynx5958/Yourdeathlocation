@@ -1,0 +1,12 @@
+[
+  {
+    "name": "base",
+    "position": {
+      "x": -215,
+      "y": 96,
+      "z": -5
+    },
+    "dimension": "minecraft:overworld",
+    "isDeathPoint": false
+  }
+]
