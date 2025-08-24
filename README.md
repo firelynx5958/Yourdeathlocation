@@ -173,14 +173,6 @@ Yes, this mod implements a different waypoint tracking approach to sodium's enti
 
 **Thanks to tr7zw for his Waypoint Pathfinding inspiration, which created the foundation for this mod.**
 
-**Thanks to tr7zw for the Bukkit build 7.3 backport.**
-
-**Thanks to tr7zw for the Fabric 1.17.0 backport.**
-
-**Thanks to tr7zw for the Waypoint Pathfinding mod.**
-
-**Thanks to tr7zw for his Waypoint Pathfinding codebase hosted tracepoints without asking for permission. Do not redistribute the jar files without permission either.**
-
 ---
 
 <div align="center">
